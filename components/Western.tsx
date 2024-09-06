@@ -3,18 +3,18 @@ import { useState, useRef } from 'react'
 
 
 const items = [
-    { id: 1, title: 'Suits', image: 'https://compote.slate.com/images/91505f18-bc10-4c5e-869b-3d17e2808ae2.jpeg?crop=1560%2C1040%2Cx0%2Cy0' },
-    { id: 2, title: 'Shameless', image: 'https://m.media-amazon.com/images/S/pv-target-images/f35400cd771573f81531b4f563c4933d25ed3ab91434fa451f2accc8675d5a0c.jpg' },
-    { id: 3, title: 'Gilmore Girls', image: 'https://miro.medium.com/v2/resize:fit:900/1*mLxTj7HpLjPkKSTME9H4cQ.jpeg' },
-    { id: 4, title: 'Lucifer', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYF2mVBT0jqheZ2eclNobBeKd4RtVuWTTraw&s' },
-    { id: 5, title: 'The Big Bang Theory', image: 'https://static1.srcdn.com/wordpress/wp-content/uploads/2018/10/The-Big-Bang-Theory-cast.jpg' },
-    { id: 6, title: 'Sex and the City', image: 'https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F16805618-55bb-457e-afed-e8671e45e23c_1152x648.jpeg' },
-    { id: 7, title: 'The Queens Gambit', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Mp4SiFIMxtJW4T9BpP1X63Qlm4SBQvPxkA&s' },
-    { id: 8, title: 'You', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Dak4ERyIprvIbU65LbilUDidJyEhiFA40Q&s' },
-    { id: 9, title: 'Prison Break', image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B661D1CF4B2D5C3EED3456C80726E412E5AF83F8C1C78A707F6D3AD27C56D67D/scale?width=1200&aspectRatio=1.78&format=webp' },
+    { id: 1, title: 'The Intern', image: 'https://resizing.flixster.com/KzzoF-1afmcDUIn__ykJWc5p__c=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p11550244_v_h9_am.jpg' },
+    { id: 2, title: 'Gemini Man', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1vgAaXkMYJPtniWt3qMVuo54qvsTxmNQsBA&s' },
+    { id: 3, title: 'The Union', image: 'https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/08/the-union-netflix.jpg' },
+    { id: 4, title: 'The Revenant', image: 'https://images.cdn.prd.api.discomax.com/2024/02/25/937b7238-3757-3a64-b03d-83f8318a1e79.jpeg?f=jpg&q=75&w=1280&w=1200' },
+    { id: 5, title: 'Captain America: Civil War', image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DBE4C13505BC8C2B8C53B1F52C3D15B0E929172D54FAF97F70F4C4C0815AD83E/scale?width=1200&amp;aspectRatio=1.78&amp;format=webp' },
+    { id: 6, title: 'Kingsman', image: 'https://i.redd.it/l3ekbet0o5ha1.jpg' },
+    { id: 7, title: 'The Fast and Furious: Tokyo Drift', image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/EC2B15CD8CD159AED1872E87FA45BB165171A0ABA8ADD1F0F623F81029E1481F/scale?width=1200&aspectRatio=1.78&format=webp' },
+    { id: 8, title: 'Top Gun Maverick', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXDlh_qcUJEAANIRlYsOXdP6EyIgYiL00q-A&s' },
+    { id: 9, title: '365 Days', image: 'https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeOz_wGiD90kk3kYjKATAPzFBesZ9ZN9eHdZsIFI_Xm2F0MAhYd_kFWOXdxKvhVqd0OhRVe2GaXubxC2DLybArqWkrEWdQzPJksbsJqvMG5esadYDf2Qx4T8ej3S5b0cnbpE6w.jpg?r=632' },
   ]
 
-const Carousel = () => {
+const Western = () => {
 
     const sliderRef = useRef<HTMLDivElement>(null)
     const [showLeftButton, setShowLeftButton] = useState(false)
@@ -35,7 +35,7 @@ const Carousel = () => {
 
   return (
     <div className="relative bg-zinc-900 bg-opacity-90 h-max py-7">
-      <h2 className="text-2xl font-bold mb-4 text-white px-8">Critically Acclaimed US TV Shows</h2>
+      <h2 className="text-2xl font-bold mb-4 text-white px-8">Western Movies</h2>
       <div className="relative overflow-hidden">
         <div
           ref={sliderRef}
@@ -77,4 +77,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default Western;

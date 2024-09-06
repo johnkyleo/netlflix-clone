@@ -3,18 +3,19 @@ import { useState, useRef } from 'react'
 
 
 const items = [
-    { id: 1, title: 'Suits', image: 'https://compote.slate.com/images/91505f18-bc10-4c5e-869b-3d17e2808ae2.jpeg?crop=1560%2C1040%2Cx0%2Cy0' },
-    { id: 2, title: 'Shameless', image: 'https://m.media-amazon.com/images/S/pv-target-images/f35400cd771573f81531b4f563c4933d25ed3ab91434fa451f2accc8675d5a0c.jpg' },
-    { id: 3, title: 'Gilmore Girls', image: 'https://miro.medium.com/v2/resize:fit:900/1*mLxTj7HpLjPkKSTME9H4cQ.jpeg' },
-    { id: 4, title: 'Lucifer', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYF2mVBT0jqheZ2eclNobBeKd4RtVuWTTraw&s' },
-    { id: 5, title: 'The Big Bang Theory', image: 'https://static1.srcdn.com/wordpress/wp-content/uploads/2018/10/The-Big-Bang-Theory-cast.jpg' },
-    { id: 6, title: 'Sex and the City', image: 'https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F16805618-55bb-457e-afed-e8671e45e23c_1152x648.jpeg' },
-    { id: 7, title: 'The Queens Gambit', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Mp4SiFIMxtJW4T9BpP1X63Qlm4SBQvPxkA&s' },
-    { id: 8, title: 'You', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Dak4ERyIprvIbU65LbilUDidJyEhiFA40Q&s' },
-    { id: 9, title: 'Prison Break', image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B661D1CF4B2D5C3EED3456C80726E412E5AF83F8C1C78A707F6D3AD27C56D67D/scale?width=1200&aspectRatio=1.78&format=webp' },
+    { id: 1, title: 'Scarlet Heart', image: 'https://lynlynsays.com/wp-content/uploads/2017/06/4926_scarletheartryeo_nowplay_small.jpg?w=1360' },
+    { id: 2, title: 'Descendants of the Sun', image: 'https://prod-images.viu.com/1472945973/8d24bc1f00e7c15e6ecf130dd3360d9261327ae1' },
+    { id: 3, title: 'Goblin', image: 'https://upload.wikimedia.org/wikipedia/en/6/68/Goblin_Poster.jpg' },
+    { id: 4, title: 'She Would Never Know', image: 'https://i0.wp.com/giaallana.com/wp-content/uploads/2021/03/9.jpg?fit=1000%2C626&ssl=1' },
+    { id: 5, title: 'Start Up', image: 'https://www.kkday.com/en/blog/wp-content/uploads/kr_Start-Up-poster-tvN-1170x630.jpg' },
+    { id: 6, title: 'Welcome to Samdal-ri', image: 'https://occ-0-8407-444.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSMDYA3-dJgpwKlU-gbUxPGMmvzxLORPUfssh1QedKBeLj3D2lnhl2wvAsIqKKm4cJrLp_8YEwLffQmCK4HzndKVWSBkkTawTHLUi2vHJgvJc8EnY1q6XCUSK7xXi3WDIrZavQ.jpg?r=3e9' },
+    { id: 7, title: 'Doctor Romantic', image: 'https://prod-images.viu.com/1028069471/2f6ff3af7d066bf424ee999d6f7696097cab2123' },
+    { id: 8, title: 'Abyss', image: 'https://i0.wp.com/boldcanon.com/wp-content/uploads/2019/09/abyss.jpg?fit=900%2C575&ssl=1' },
+    { id: 9, title: 'The Heirs', image: 'https://prod-images.viu.com/492556326/3074ba79af1e388c0127a5c0534645107b08bc3c' },
+    { id: 9, title: 'Queen of Tears', image: 'https://miro.medium.com/v2/resize:fit:1000/1*7pByBoXSieWWYoBfKURlQw.jpeg' },
   ]
 
-const Carousel = () => {
+const Kdrama = () => {
 
     const sliderRef = useRef<HTMLDivElement>(null)
     const [showLeftButton, setShowLeftButton] = useState(false)
@@ -35,7 +36,7 @@ const Carousel = () => {
 
   return (
     <div className="relative bg-zinc-900 bg-opacity-90 h-max py-7">
-      <h2 className="text-2xl font-bold mb-4 text-white px-8">Critically Acclaimed US TV Shows</h2>
+      <h2 className="text-2xl font-bold mb-4 text-white px-8">Western Movies</h2>
       <div className="relative overflow-hidden">
         <div
           ref={sliderRef}
@@ -77,4 +78,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default Kdrama;
