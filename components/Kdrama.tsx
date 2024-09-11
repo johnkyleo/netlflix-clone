@@ -35,7 +35,7 @@ const Kdrama = () => {
     }
 
   return (
-    <div className="relative bg-zinc-900 bg-opacity-90 h-max py-7">
+    <div className="relative bg-slate-950 bg-opacity-90 h-max py-7">
       <h2 className="text-2xl font-bold mb-4 text-white px-8">Western Movies</h2>
       <div className="relative overflow-hidden">
         <div
